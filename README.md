@@ -13,13 +13,11 @@
 
 <br>
 
-# hxpint
-
 ## 🚀 Introduction
 
-`hxpint` is a simple Bash script that allows you to use [Laravel Pint](link-laravel-pint) as a formatter for PHP files in [Helix Editor](link-helix-editor).
+`hxpint` is a simple Bash script that allows you to use [Laravel Pint][link-laravel-pint] as a formatter for PHP files in [Helix Editor][link-helix-editor].
 
-The problem without this script is that [Helix](link-helix-editor) puts the contents of the file into `stdin` and takes the formatted version from `stdout`, and [Laravel Pint](link-laravel-pint) formats the file and saves it. The only way to use it was via `dprint` and `:reload-all` command in [Helix](link-helix-editor). But it's inconvenient because you should run `:rla` command after each save and should be aware of it all the time.
+The problem without this script is that [Helix][link-helix-editor] puts the contents of the file into `stdin` and takes the formatted version from `stdout`, and [Laravel Pint][link-laravel-pint] formats the file and saves it. The only way to use it was via `dprint` and `:reload-all` command in [Helix][link-helix-editor]. But it's inconvenient because you should run `:rla` command after each save and should be aware of it all the time.
 
 `hxpint` solves this problem.
 
@@ -29,13 +27,13 @@ The problem without this script is that [Helix](link-helix-editor) puts the cont
 
 ### Requirements
 
-- **[PHP 8.2+](link-php-releases)**
-- **[Laravel 11.0+](link-laravel)**
-- **[Laravel Pint](link-laravel-pint)**
+- **[PHP 8.2+][link-php-releases]**
+- **[Laravel 11.0+][link-laravel]**
+- **[Laravel Pint][link-laravel-pint]**
 
 ### Installation & Helix Configuration
 
-If you don't have [Laravel Pint](link-laravel-pint) installed yet, install it through the [Composer](link-composer):
+If you don't have [Laravel Pint][link-laravel-pint] installed yet, install it through the [Composer][link-composer]:
 
 ```zsh
 composer require laravel/pint --dev
@@ -53,7 +51,7 @@ mv hxpint.sh $HOME/.local/bin
 > [!IMPORTANT]
 > The path to the folder where you put the hxpint script should be in your `.bashrc` or `.zshrc`!
 
-Now add `hxpint` to your [Helix](link-helix-editor) `languages.toml` configuration file.
+Now add `hxpint` to your [Helix][link-helix-editor] `languages.toml` configuration file.
 
 ```zsh
 hx $HOME/.config/helix/languages.toml
@@ -66,7 +64,7 @@ formatter = { command = "hxpint.sh", args = ["--stdin"] }
 auto-format = true
 ```
 
-**And that's it!** Open any PHP file in your [Laravel](link-laravel) project and see if `hxpint` works. You can break the formatting and run the `:fmt` command.
+**And that's it!** Open any PHP file in your [Laravel][link-laravel] project and see if `hxpint` works. You can break the formatting and run the `:fmt` command.
 
 <br>
 
