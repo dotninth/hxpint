@@ -11,8 +11,6 @@
     </a>
 </p>
 
-<br>
-
 ## 🚀 Introduction
 
 `hxpint` is a simple Bash script that allows you to use [Laravel Pint][link-laravel-pint] as a formatter for PHP files in [Helix Editor][link-helix-editor].
