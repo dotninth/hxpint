@@ -62,7 +62,9 @@ formatter = { command = "hxpint.sh", args = ["--stdin"] }
 auto-format = true
 ```
 
-**And that's it!** Open any PHP file in your [Laravel][link-laravel] project and see if `hxpint` works. You can break the formatting and run the `:fmt` command.
+**And that's it!** Open any PHP file in your [Laravel][link-laravel] project and see if `hxpint` works. You can break the formatting and run the `:fmt` command to make sure everything works as intended.
+
+**Have fun!**
 
 <br>
 
