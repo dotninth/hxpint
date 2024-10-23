@@ -2,14 +2,14 @@
 
 <br>
 
-<h1 align="center">
+<p align="center">
     <a href="https://github.com/dotninth/hxpint#gh-light-mode-only">
         <img src="./.github/assets/hxpint-light.svg" alt="Laravel Tachyon">
     </a>
     <a href="https://github.com/dotninth/hxpint#gh-dark-mode-only">
         <img src="./.github/assets/hxpint-dark.svg" alt="Laravel Tachyon">
     </a>
-</h1>
+</p>
 
 <br>
 
