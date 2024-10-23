@@ -47,7 +47,7 @@ mv hxpint.sh $HOME/.local/bin
 ```
 
 > [!IMPORTANT]
-> The path to the folder where you put the hxpint script should be in your `.bashrc` or `.zshrc`!
+> The path to the folder where you put the `hxpint` script should be in your `.bashrc` or `.zshrc`!
 
 Now add `hxpint` to your [Helix][link-helix-editor] `languages.toml` configuration file.
 
