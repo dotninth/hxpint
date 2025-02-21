@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Check if Laravel Pint is installed
-if [ ! -f "./vendor/bin/pint" ]; then
+if ! composer global show laravel/pint >/dev/null 2>&1; then
     echo "Laravel Pint is not installed."
     read -p "Would you like to install it now? (Y/N): " choice
     case "$choice" in
         [Yy]*)
-            composer require laravel/pint --dev
+            composer global require laravel/pint
             ;;
         [Nn]*)
             echo "Laravel Pint is required for formatting. Exiting..."
@@ -45,7 +45,7 @@ else
     show_usage
 fi
 
-./vendor/bin/pint "$tmp_file" -q
+pint "$tmp_file" -q
 
 cat "$tmp_file"
 
