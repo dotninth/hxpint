@@ -34,7 +34,7 @@ The problem without this script is that [Helix][link-helix-editor] puts the cont
 If you don't have [Laravel Pint][link-laravel-pint] installed yet, install it through the [Composer][link-composer]:
 
 ```zsh
-composer require laravel/pint --dev
+composer global require laravel/pint
 ```
 
 Now clone the repo and install the script. You can install it in any directory you want, I show you an example of the default `$HOME/.local/bin` folder in Linux here.
